@@ -1,0 +1,37 @@
+
+.like__btn {
+  width: 24px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  &:hover {
+    .like__heart {
+      display: none;
+    }
+    .like__heart--white {
+      display: none;
+    }
+    .like__heart--red {
+      display: block;
+    }
+  }
+  .like__heart--red {
+    display: none;
+  }
+}
+.like__counts {
+  font-size: 11px;
+  font-family: roboto_condensedlight;
+  color: rgb(255, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.091;
+  margin: 5px 0;
+}
+.like{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lldmi2');
+  src:  url('../fonts/icomoon.eot?lldmi2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lldmi2') format('truetype'),
+    url('../fonts/icomoon.woff?lldmi2') format('woff'),
+    url('../img/icomoon.svg?lldmi2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+  content: "\e900";
+  color: #7fc9bf;
+  transition: color .5s;
+}
+.icon-fb:hover:before{
+  color: $hoverColorText;
+}
+.icon-google:before {
+  content: "\e901";
+  color: #7fc9bf;
+  transition: color .5s;
+}
+.icon-google:hover:before{
+  color: $hoverColorText;
+}
+.icon-linkedin:before {
+  content: "\e902";
+  color: #7fc9bf;
+  transition: color .5s;
+}
+.icon-linkedin:hover:before{
+  color: $hoverColorText;
+}
+.icon-twitter:before {
+  content: "\e903";
+  color: #7fc9bf;
+  transition: color .5s;
+}
+.icon-twitter:hover:before{
+  color: $hoverColorText;
+}
