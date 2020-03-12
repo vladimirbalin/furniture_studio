@@ -191,6 +191,12 @@ $menuBg: #f8c255;
       padding-top: 15px;
       overflow-y: auto;
     }
+    &__list--fade{
+      display: block;
+      min-width: auto;
+      padding-right: 70px;
+      padding-top: 15px;
+    }
     &__link{
       display: block;
       padding: 7px 80px 7px 0;

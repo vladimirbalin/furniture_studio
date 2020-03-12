@@ -46,7 +46,7 @@
   &__element--two {
     grid-column: span 6;
     grid-row: span 2;
-    background: url('../img/fondue.png') right top/cover no-repeat white;
+    background: url('../img/fondue.png') left top/cover no-repeat white;
     .projects__info {
       margin: 15.2% 0 13.3% 18.7%;
     }
@@ -55,6 +55,9 @@
     }
     .projects__like{
       margin-top: 20.17%;
+    }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/fondue-2x.png');
     }
   }
   &__info {}
@@ -107,7 +110,7 @@
   &__element--three {
     grid-column: span 5;
     grid-row: span 1;
-    background: url('../img/potter.png') right center/cover no-repeat #dfe0d9;
+    background: url('../img/potter.png') left center/cover no-repeat #dfe0d9;
     .projects__info {
       margin: 7.7% 0 3.4% 9.2%;
     }
@@ -118,11 +121,14 @@
       margin-top: 25px;
       margin-bottom: 5.6%;
     }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/potter-2x.png');
+    }
   }
   &__element--four {
     grid-column: span 5;
     grid-row: span 2;
-    background: url('../img/tabano.png') right top/cover no-repeat #f7f7f3;
+    background: url('../img/tabano.png') center top/cover no-repeat #f7f7f3;
     padding-top: 73.7%;
     padding-left: 12.9%;
     padding-bottom: 9%;
@@ -139,11 +145,14 @@
     .projects__counter{
       margin-bottom: 10px;
     }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/tabano-2x.png');
+    }
   }
   &__element--five {
     grid-column: span 3;
     grid-row: span 2;
-    background: url('../img/louis.jpg') right center/cover no-repeat #697885;
+    background: url('../img/louis.png') left center/cover no-repeat #697885;
     .projects__name, {}
     .projects__info, .projects__view{
       margin: 14% 0 0 10.3%;
@@ -161,11 +170,14 @@
         border-bottom: 1px solid white;
       }
     }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/louis-2x.png');
+    }
   }
   &__element--six {
     grid-column: span 8;
     grid-row: span 2;
-    background: url('../img/395.png') right center/cover no-repeat #eaeaea;
+    background: url('../img/395.png') left center/cover no-repeat #eaeaea;
     display: flex;
     align-items: flex-start;
     .projects__info{
@@ -179,11 +191,14 @@
     .projects__like{
       margin-top: 26px;
     }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/395-2x.png');
+    }
   }
   &__element--seven {
     grid-column: span 5;
     grid-row: span 1;
-    background: url('../img/fiji.jpg') right center/cover no-repeat white;
+    background: url('../img/fiji.png') left center/cover no-repeat white;
     padding-left: 53.3%;
     padding-top: 10.75%;
     .projects__info{
@@ -195,11 +210,14 @@
     .projects__like{
       margin-bottom: 4.7%;
     }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/fiji-2x.png');
+    }
   }
   &__element--eight {
     grid-column: span 8;
     grid-row: span 1;
-    background: url('../img/sesann.jpg') right center/cover no-repeat #fcfcfc;
+    background: url('../img/sesann.png') left center/cover no-repeat #fcfcfc;
     display: flex;
     padding-top: 26.6%;
     padding-left: 15.4%;
@@ -212,12 +230,14 @@
       margin-top: 32px;
       margin-left: 6.8%;
     }
-
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/sesann-2x.png');
+    }
   }
   &__element--nine {
     grid-column: span 3;
     grid-row: span 1;
-    background: url('../img/alessi.png') right center/cover no-repeat #cecece;
+    background: url('../img/alessi.png') left center/cover no-repeat #cecece;
     .projects__info{
       margin-top: 26%;
       margin-left: 50%;
@@ -229,6 +249,9 @@
     .projects__like{
       margin-top: 8.6%;
       margin-bottom: 12.3%;
+    }
+    @media (min-resolution: 2dppx), (min-width: 1500px) {
+      background-image: url('../img/alessi-2x.png');
     }
   }
   &__element--ten {
@@ -246,8 +269,12 @@
       background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="56.7%" y2="0" stroke="rgb(255,255,255)" stroke-width="1"/></svg>');
     }
     .projects__subtitle{
+      font-size: 14px;
       margin-top: 12.9%;
-      margin-left: 21.5%
+      margin-left: 21.5%;
+      @media (min-width: 1500px) {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500)
+      }
     }
   }
   &__like{
@@ -276,3 +303,149 @@
   }
 }
 
+@media (max-width: 980px){
+  .projects{
+    &__element--one{
+      grid-column: span 7;
+      .projects__title{
+        font-size: 30px;
+      }
+      .projects__links{
+        margin-left: calc(20.9% - 25px);
+      }
+    }
+    &__element--two{
+      grid-column: span 9;
+    }
+    &__element--three{
+      grid-column: span 9;
+      grid-row: span 2;
+      background-size: 100%;
+    }
+    &__element--four{
+      grid-column: span 7;
+      grid-row: span 2;
+      .projects__counter{
+        display: block;
+      }
+      .projects__view{
+
+      }
+      .projects__like{
+        margin-top: 5%;
+      }
+
+    }
+    &__element--five{
+      grid-column: span 5;
+    }
+    &__element--six{
+      grid-column: span 7;
+      grid-row: span 1;
+
+      background-position: -50px 0;
+      .projects__info {
+        margin-left: 26.9%;
+        margin-top: 5.5%;
+      }
+      .projects__counter{
+        margin-top: 5.5%;
+      }
+    }
+    &__element--seven{
+      grid-column: span 4;
+      grid-row: span 1;
+      padding-left: 30%;
+      .projects__info{
+        margin-left: 0;
+        margin-bottom: 15%;
+      }
+    }
+    &__element--eight{
+      grid-column: span 11;
+    }
+    &__element--nine{
+      grid-column: span 7;
+    }
+    &__element--ten{
+      grid-column: span 9;
+    }
+
+  }
+}
+
+@media (max-width: 650px){
+  .projects{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    &__element--one, &__element--two, &__element--three, &__element--four, &__element--five, &__element--six, &__element--seven, &__element--eight, &__element--nine, &__element--ten{
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    &__element--one{
+      .projects__links{
+        margin-top: 5%;
+      }
+      .projects__title{
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    }
+    &__element--four{
+      padding: 10%;
+      background-size: 100%;
+      justify-content: flex-start;
+      background-position: 120px 20%;
+    }
+    &__element--five{
+      background-size: 100%;
+      background-position: 0 80%;
+      .projects__info{
+        margin-left: 40%;
+      }
+      .projects__counter{
+        margin-top: 5%;
+        margin-left: 40%;
+      }
+      .projects__view{
+        margin: 0;
+      }
+      .projects__like{
+        margin-bottom: 5%;
+      }
+
+    }
+    &__element--six{
+      background-position: -100px 50%;
+      .projects__info{
+        margin-bottom: 10%;
+        margin-left: 50%;
+      }
+    }
+
+    &__element--seven{
+      padding-left: 50%;
+    }
+    &__element--nine{
+      .projects__info{
+        margin-top: 9%;
+      }
+    }
+    &__element--ten{
+      .projects__subtitle{
+        margin-left: 50%;
+        margin-top: 5%;
+      }
+      .projects__links{
+        .links__item{
+
+          margin-left: calc(50% - 25px);
+        }
+      }
+    }
+    &__element--one{
+
+    }
+
+  }
+}

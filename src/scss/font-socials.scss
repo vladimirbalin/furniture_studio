@@ -56,4 +56,37 @@
 }
 .icon-twitter:hover:before{
   color: $hoverColorText;
+
+
+}.icon-fb-s:before {
+  content: "\e900";
+  color: #FD5000;
+  transition: color .5s;
+}
+.icon-fb-s:hover:before{
+  color: $hoverColorText;
+}
+.icon-google-s:before {
+  content: "\e901";
+  color: #FD5000;
+  transition: color .5s;
+}
+.icon-google-s:hover:before{
+  color: $hoverColorText;
+}
+.icon-linkedin-s:before {
+  content: "\e902";
+  color: #FD5000;
+  transition: color .5s;
+}
+.icon-linkedin-s:hover:before{
+  color: $hoverColorText;
+}
+.icon-twitter-s:before {
+  content: "\e903";
+  color: #FD5000;
+  transition: color .5s;
+}
+.icon-twitter-s:hover:before{
+  color: $hoverColorText;
 }

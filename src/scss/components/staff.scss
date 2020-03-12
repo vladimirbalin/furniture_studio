@@ -1,0 +1,98 @@
+.staff {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  &__subtitle {
+    font-size: 14px;
+    font-family: roboto_condensedregular;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  &__description {
+    grid-column: span 5;
+    padding: 14.19% 7.5% 21.5% 35.48%;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: roboto_condensedlight;
+    color: rgb(51, 51, 51);
+    line-height: 1;
+    margin-top: 5.37%;
+  }
+  &__persons {
+    grid-column: span 11;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 6.28% 0 10.14% 0;
+    margin: 0;
+  }
+  &__items {
+    padding-left: 2.89%;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+  &__person {
+    max-width: 270px;
+  }
+}
+.persons {
+  &__name {
+    margin-top: 1.7%;
+    font-size: 13px;
+    font-family: roboto_condensedbold;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.231;
+  }
+  &__proff {
+    font-size: 12px;
+    font-family: roboto_condensedregular;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.333;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 3.93%;
+  }
+  &__cv {
+    padding-right: 30px;
+    background: url("../img/arrow-cv.svg") right bottom no-repeat;
+    font-size: 14px;
+    font-family: roboto_condensedregular;
+    color: #FD5000;
+    text-transform: uppercase;
+    line-height: 1.143;
+    text-decoration: none;
+  }
+  .persons__socials{
+    .icon-fb:before {
+      color: deeppink;
+      transition: color .5s;
+    }
+    .icon-fb:hover:before{
+      color: deeppink;
+    }
+  }
+
+
+}
+
+.icon {
+}
+.icon-twitter {
+}
+.icon-twitter-dims {
+}
+.icon-linkedin {
+}
+.icon-linkedin-dims {
+}
+.icon-google {
+}
+.icon-google-dims {
+}
