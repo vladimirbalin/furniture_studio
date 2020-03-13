@@ -20,14 +20,14 @@
   }
 
   &__title {
-    margin: 0;
-    position: absolute;
-    bottom: 36%;
-    right: 23.65%;
+    margin: 63.44% 0 36.12% 46.45%;
     font-size: 48px;
     color: rgb(254, 254, 254);
     text-transform: uppercase;
     line-height: 1;
+    @media (min-width: 1500px) {
+      @include dynamicText(300%, 96, 48, 1500px, 3000, 1500)
+    }
   }
 
   &__right {
@@ -45,7 +45,9 @@
     font-size: 18px;
     color: rgb(51, 51, 51);
     line-height: 1;
-
+    @media (min-width: 1500px) {
+      @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500)
+    }
     &:nth-child(2) {
       margin-bottom: 40px;
     }
@@ -85,7 +87,9 @@
     text-transform: uppercase;
     line-height: 1.286;
     position: relative;
-
+    @media (min-width: 1500px) {
+      @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500)
+    }
     &::after {
       content: '';
       background-color: rgb(0, 0, 0);
@@ -113,9 +117,40 @@
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     line-height: 1.167;
-
+    @media (min-width: 1500px) {
+      @include dynamicText(75%, 24, 12, 1500px, 3000, 1500)
+    }
     &:nth-child(2) {
       padding-left: 10%;
     }
   }
 }
+
+@media (max-width: 980px) {
+  .studio{
+    &__left {
+      grid-column: span 16;
+    }
+    &__right{
+      grid-column: span 16;
+    }
+    &__description{
+      grid-column: span 6;
+    }
+    &__information{
+      grid-column: span 5;
+    }
+    &__title {
+      margin: 15% 0 7.12% 46.45%;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .studio{
+    &__title{
+      font-size: 30px;
+    }
+  }
+}
+

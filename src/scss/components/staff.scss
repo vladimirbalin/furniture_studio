@@ -7,6 +7,9 @@
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     line-height: 1;
+    @media (min-width: 1500px) {
+      @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500)
+    }
   }
   &__description {
     grid-column: span 5;
@@ -18,24 +21,31 @@
     color: rgb(51, 51, 51);
     line-height: 1;
     margin-top: 5.37%;
+    @media (min-width: 1500px) {
+      @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500)
+    }
+  }
+  &__right{
+    grid-column: span 11;
+    padding: 6.28% 15.94% 9.85% 0;
   }
   &__persons {
-    grid-column: span 11;
     display: flex;
-    justify-content: flex-start;
     list-style: none;
-    padding: 6.28% 0 10.14% 0;
     margin: 0;
   }
   &__items {
+    flex-basis: 31%;
     padding-left: 2.89%;
     &:first-child{
       padding-left: 0;
     }
   }
   &__person {
-    max-width: 270px;
+    display: block;
+    width: 100%;
   }
+
 }
 .persons {
   &__name {
@@ -45,6 +55,9 @@
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     line-height: 1.231;
+    @media (min-width: 1500px) {
+      @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500)
+    }
   }
   &__proff {
     font-size: 12px;
@@ -52,22 +65,37 @@
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     line-height: 1.333;
+    @media (min-width: 1500px) {
+      @include dynamicText(75%, 24, 12, 1500px, 3000, 1500)
+    }
   }
   &__info {
     display: flex;
     justify-content: space-between;
-
     padding-top: 3.93%;
   }
   &__cv {
     padding-right: 30px;
-    background: url("../img/arrow-cv.svg") right bottom no-repeat;
+    background: url("../img/arrow-cv.svg") right center no-repeat;
     font-size: 14px;
     font-family: roboto_condensedregular;
     color: #FD5000;
     text-transform: uppercase;
     line-height: 1.143;
     text-decoration: none;
+
+    &:hover{
+      span{
+        border-color: #FD5000;
+      }
+    }
+    span{
+      border-bottom: 1px solid transparent;
+      transition: border-color .5s;
+    };
+    @media (min-width: 1500px) {
+      @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500)
+    }
   }
   .persons__socials{
     .icon-fb:before {
@@ -78,21 +106,37 @@
       color: deeppink;
     }
   }
-
-
 }
 
-.icon {
+@media (max-width: 1500px) {
+  .staff__right{
+    padding-right: 2%;
+  }
 }
-.icon-twitter {
+@media (max-width: 980px) {
+  .staff{
+    &__description{
+      padding: 2.6% 17% 1.8% 11%;
+      grid-column: span 16;
+    }
+    &__right{
+      grid-column: span 16;
+      padding: 5%;
+    }
+    &__text{
+      margin-top: 5px;
+    }
+  }
 }
-.icon-twitter-dims {
-}
-.icon-linkedin {
-}
-.icon-linkedin-dims {
-}
-.icon-google {
-}
-.icon-google-dims {
+@media (max-width: 560px) {
+  .staff{
+    &__persons{
+      flex-direction: column;
+    }
+    &__items{
+      margin-bottom: 5%;
+      padding-left: 0;
+      flex-basis: auto;
+    }
+  }
 }
