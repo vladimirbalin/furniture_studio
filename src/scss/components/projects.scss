@@ -297,6 +297,7 @@
   &__link {
     color: white;
     text-decoration: none;
+    transition: .5s color;
     @media (min-width: 1500px) {
       @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500)
     }
@@ -391,6 +392,12 @@
         margin-bottom: 5%;
       }
     }
+    &__element--two{
+      padding-bottom: 5%;
+      .projects__like{
+        margin-top: 5%;
+      }
+    }
     &__element--four{
       padding: 10%;
       background-size: 100%;
@@ -438,9 +445,11 @@
       }
       .projects__links{
         .links__item{
-
           margin-left: calc(50% - 25px);
         }
+      }
+      .projects__info{
+        padding-bottom: 5%;
       }
     }
     &__element--one{
@@ -449,3 +458,5 @@
 
   }
 }
+
+

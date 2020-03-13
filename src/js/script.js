@@ -17,5 +17,44 @@ window.addEventListener('DOMContentLoaded', function () {
       }
       hamburger.classList.toggle('hamburger--active');
     }
-  })
+  });
+
+
+
+
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhamtlIiwiYSI6ImNrN3E3ZjJsbTAwcDYzZXBlYXVkZzAyZnoifQ.r7qYlDmBPxnSfl0ZNCEOxg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/brajke/ck7q9v75q06e61ioyq44okhfd'
+  });
+
+
+  var geojson = {
+    type: 'FeatureCollection',
+    features: [
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [-118.1892666, 33.7765453]
+        },
+        properties: {
+          title: 'Mapbox',
+          description: 'San Francisco, California'
+        }
+      }]
+  };
+  // add markers to map
+  geojson.features.forEach(function(marker) {
+
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker';
+
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(el)
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
+  });
 });

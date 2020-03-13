@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+
   <title>DSGN</title>
 </head>
 <body>
@@ -519,6 +522,57 @@
       </ul>
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__map">
+      <div id="map"></div>
+    </div>
+    <div class="footer__info">
+      <div class="footer__left">
+        <p class="footer__address">
+          90802 CALIFORNIA <br>LONG BEACH <br>
+          PO BOX 68789 <br>
+          300 EAST OCEAN <br>
+        </p>
+        <p class="footer__contacts">
+          <a class="footer__tel" href="tel:+6493456758">+64 9 345 6758</a>
+          <br>
+          <a class="footer__mail" href="#">INFO@DSGN-STUDIO.COM</a>
+        </p>
+      </div>
+      <div class="footer__right">
+        <img class="footer__logo"
+             src="img/logo.png"
+             alt="Логотип"
+             srcset="img/logo.png 1x,
+                   img/logo_2x.png 2x">
+
+        <p class="footer__slogan">ASSOCIATES <br> STUDIO <br> DESIGN</p>
+        <ul class="footer__socials socials">
+          <li class="socials__element">
+            <a class="socials__link" aria-label="Facebook" href="#">
+              <div class="icon-fb"></div>
+            </a>
+          </li>
+          <li class="socials__element">
+            <a class="socials__link" aria-label="Twitter" href="#">
+              <div class="icon icon-twitter icon-twitter-dims"></div>
+            </a>
+          </li>
+          <li class="socials__element">
+            <a class="socials__link" aria-label="Linkedin" href="#">
+              <div class="icon icon-linkedin icon-linkedin-dims"></div>
+            </a>
+          </li>
+          <li class="socials__element">
+            <a class="socials__link" aria-label="Google plus" href="#">
+              <div class="icon icon-google icon-google-dims"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">&copy;2014 DSGN. All rights reserved - Designed by theuncreativelab.com</div>
+    </div>
+  </footer>
 </div>
 
 </body>
