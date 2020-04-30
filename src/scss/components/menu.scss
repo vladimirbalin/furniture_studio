@@ -151,13 +151,13 @@ $menuBg: #f8c255;
     opacity: 0;
   }
   100%{
-    opacity: 100%;
+    opacity: 1;
   }
 
 }
 @keyframes menu_fade {
   0%{
-    opacity: 100%;
+    opacity: 1;
   }
   100% {
     opacity: 0;
