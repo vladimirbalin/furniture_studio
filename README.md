@@ -1,4 +1,5 @@
 # furniture_studio
-- html/css
+- responsive html/css
   - grid layout
 - vanilla js
+- map
