@@ -1,5 +1,10 @@
-# furniture_studio
+## Вёрстка для магазина по продаже мебели
+
+#### Лэндинг страница.
+
+#### Использовались:
+
 - responsive html/css
-  - grid layout
+    - grid layout
 - vanilla js
-- map
+- map layout
